@@ -99,6 +99,7 @@
     <Compile Include="Assets\OurScripts\Fuel7.cs" />
     <Compile Include="Assets\OurScripts\Fuel8.cs" />
     <Compile Include="Assets\OurScripts\Fuel9.cs" />
+    <Compile Include="Assets\OurScripts\Pcd_Mus1.cs" />
     <Compile Include="Assets\OurScripts\PlayerHealth414.cs" />
     <Compile Include="Assets\OurScripts\Wander2.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
