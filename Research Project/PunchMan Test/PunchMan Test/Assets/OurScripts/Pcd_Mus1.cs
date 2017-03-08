@@ -10,12 +10,23 @@ public class Pcd_Mus1 : MonoBehaviour {
     private static List<char> musicLvl2;
     private static List<char> musicLvl3;
     private static List<char> musicLvl4;
+
+    private float distance;
     void Start () {
         enemy1 = GetComponent<Aggro414>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        //Promity Cue method 1: Distance *********************
+        distance = enemy1.playerDistance;           //TODO: Figure out distance scale and assign condition statements accordingly
+
+        if (distance >= 500) { }
+        else if (distance >= 250 && distance < 500) { }
+        else if (distance >= 50 && distance < 250) { }
+        else { }
+        //****************************************************
+
+        
 	}
 }
