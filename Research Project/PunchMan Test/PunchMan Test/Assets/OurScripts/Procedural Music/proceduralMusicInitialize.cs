@@ -22,12 +22,13 @@ public class musicObject{
 	public GameObject self {get; set;}
 	public int musicValue {get; set;}
 	public string type {get; set;}
-	public musicObject(){}
+    public musicObject(){}
 	public musicObject(GameObject s, string t){
 		self = s;
 		musicValue = 0;
 		type = t;
 	}
+    
 	
 }
 

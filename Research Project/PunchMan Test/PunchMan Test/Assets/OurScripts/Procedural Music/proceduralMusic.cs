@@ -20,11 +20,11 @@ public class proceduralMusic : MonoBehaviour {
 	
 	//Initialize Variables
 	int step = 0; 	//Count frames
-	float dist;		//Initialize Distance Variable
-		
+	float dist;     //Initialize Distance Variable
+    public AudioSource sample1;	
 		
 	void Start () {
-		
+        sample1 = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -35,7 +35,13 @@ public class proceduralMusic : MonoBehaviour {
 			foreach(KeyValuePair<int, musicObject> entry in ProceduralMusicDictionaries.enemies){
 				//Calculate distance between each enemy.
 				dist = Vector3.Distance(transform.position, entry.Value.self.transform.position);
-				
+				if(dist < 10 && sample1.isPlaying == false)
+                {
+                    sample1.Play();
+                } else
+                {
+                    sample1.Stop();
+                }
 				print(dist);
 
 			}
