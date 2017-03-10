@@ -101,6 +101,9 @@
     <Compile Include="Assets\OurScripts\Fuel9.cs" />
     <Compile Include="Assets\OurScripts\Pcd_Mus1.cs" />
     <Compile Include="Assets\OurScripts\PlayerHealth414.cs" />
+    <Compile Include="Assets\OurScripts\Procedural Music\enemyInit.cs" />
+    <Compile Include="Assets\OurScripts\Procedural Music\proceduralMusic.cs" />
+    <Compile Include="Assets\OurScripts\Procedural Music\proceduralMusicInitialize.cs" />
     <Compile Include="Assets\OurScripts\Wander2.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />

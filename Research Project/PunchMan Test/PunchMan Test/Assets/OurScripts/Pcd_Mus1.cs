@@ -21,10 +21,10 @@ public class Pcd_Mus1 : MonoBehaviour {
         //Promity Cue method 1: Distance *********************
         distance = enemy1.playerDistance;           //TODO: Figure out distance scale and assign condition statements accordingly
 
-        if (distance >= 500) { }
-        else if (distance >= 250 && distance < 500) { }
-        else if (distance >= 50 && distance < 250) { }
-        else { }
+        if (distance >= 500) { }//select randomly from one of the tracks from lvl1
+        else if (distance >= 250 && distance < 500) { }//select randomly one of the tracks from lvl2
+        else if (distance >= 50 && distance < 250) { }//select randomly one of the tracks from lvl3
+        else { }//select ranfomly from one of the tracks from lvl4
         //****************************************************
 
         
