@@ -33,16 +33,22 @@ public class proceduralMusic : MonoBehaviour {
 		if (step == 30){
 			step = 0;
 			foreach(KeyValuePair<int, musicObject> entry in ProceduralMusicDictionaries.enemies){
-				//Calculate distance between each enemy.
-				dist = Vector3.Distance(transform.position, entry.Value.self.transform.position);
-				if(dist < 10 && sample1.isPlaying == false)
-                {
-                    sample1.Play();
+                //Calculate distance between each enemy.
+
+                if (entry.Value.type == "enemy") {
+                    dist = Vector3.Distance(transform.position, entry.Value.self.transform.position);
+                    if (dist < 10 && sample1.isPlaying == false)
+                    {
+                        sample1.Play();
+                    } else
+                    {
+                        sample1.
+                    }
+                    print(dist);
                 } else
                 {
-                    sample1.Stop();
+                    //Item
                 }
-				print(dist);
 
 			}
 		}
