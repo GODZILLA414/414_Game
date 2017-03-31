@@ -14,3 +14,8 @@ public class musicBehaviour : MonoBehaviour {
 		
 	}
 }
+
+public class proximity{
+	
+	
+}

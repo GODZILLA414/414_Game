@@ -19,15 +19,19 @@ public class proceduralMusic : MonoBehaviour {
 	// Use this for initialization
 	
 	//Initialize Variables
-	int step = 0; 	//Count frames
-	float dist;     //Initialize Distance Variable
-    public AudioSource sample1;	
-	public riffList riffs = new riffList();
+    public AudioSource audSrc;	
+	
+	// === Variables For Procedural Music === //
+	int step = 0; 			//Count frames
+	float dist;     		//Initialize Distance Variable
+	int numTension = 4;		//Number of tension levels
+	
+	public riffList riffs = new riffList();	//Define riffList, see proceduralMusicInitialize.cs for more details
 		
 	void Start () {
 		//Add Songs Here
 		riffs.addTrack(0, Resources.Load<AudioClip>("OurScripts/OurMusic/Base_Beat"));
-        sample1 = GetComponent<AudioSource>();
+        audSrc = GetComponent<AudioSource>();
 		
 	}
 	
@@ -36,25 +40,39 @@ public class proceduralMusic : MonoBehaviour {
 		step++;
 		if (step == 30){
 			step = 0;
-			foreach(KeyValuePair<int, musicObject> entry in ProceduralMusicDictionaries.enemies){
-                //Calculate distance between each enemy.
-
-                if (entry.Value.type == "enemy") {
-                    dist = Vector3.Distance(transform.position, entry.Value.self.transform.position);
-                    if (dist < 10 && sample1.isPlaying == false)
-                    {
-                        sample1.Play();
-                    } else
-                    {
-						sample1.Stop();
-                    }
-                    print(dist);
-                } else
-                {
-                    //Item
-                }
-
+			//Write Behaviours we want here!
+			enemyProx(10);
+		}
+	}
+	
+	void enemyProx(int proximity){
+		
+		foreach(KeyValuePair<int, musicObject> entry in ProceduralMusicDictionaries.enemies){
+			//Calculate distance between each enemy.
+			audSrc.clip = riffs.getRiff(0);
+			
+			if (entry.Value.type == "enemy") {
+				dist = Vector3.Distance(transform.position, entry.Value.self.transform.position);
+				if (dist < proximity && audSrc.isPlaying == false){
+					audSrc.Play();
+				} else {
+					audSrc.Stop();
+				}
+			} else{
+				//Item
 			}
 		}
+	}
+	
+	void parameterMusic(int parameter, int type, int min, int max){
+		/*For things such as health or # of items collected
+		Define multiple types such as if higher more tension or higher less tension.
+		Types:
+		0 - Default, Higher amount = more tension
+		1 - Less amount = more tension
+		
+		Must define max and min for the parameter
+		*/
+		
 	}
 }
