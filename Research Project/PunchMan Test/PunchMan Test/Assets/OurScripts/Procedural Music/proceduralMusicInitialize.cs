@@ -89,7 +89,6 @@ public static class ProceduralMusicDictionaries{
 	This is a proof of concept and will probably be modularized to be as generic as possible.*/
 	
 	//The key is the instance ID and the value is the music layer.
-	public static riffList riffs = new riffList();
 	public static Dictionary<int, musicObject> enemies = new Dictionary<int, musicObject>();
 	public static Dictionary<int, musicObject> items = new Dictionary<int, musicObject>();
 }

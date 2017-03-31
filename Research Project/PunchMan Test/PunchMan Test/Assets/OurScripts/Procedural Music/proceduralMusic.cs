@@ -22,9 +22,13 @@ public class proceduralMusic : MonoBehaviour {
 	int step = 0; 	//Count frames
 	float dist;     //Initialize Distance Variable
     public AudioSource sample1;	
+	public riffList riffs = new riffList();
 		
 	void Start () {
+		//Add Songs Here
+		riffs.addTrack(0, Resources.Load<AudioClip>("OurScripts/OurMusic/Base_Beat"));
         sample1 = GetComponent<AudioSource>();
+		
 	}
 	
 	// Update is called once per frame
