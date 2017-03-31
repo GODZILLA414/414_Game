@@ -42,7 +42,7 @@ public class proceduralMusic : MonoBehaviour {
                         sample1.Play();
                     } else
                     {
-                        sample1.
+						sample1.Stop();
                     }
                     print(dist);
                 } else
