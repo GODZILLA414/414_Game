@@ -85,6 +85,16 @@
     <Compile Include="Assets\GradientGUIBars\Script\GUIBarScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
     <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
+    <Compile Include="Assets\Items\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\ExampleScenes\ExampleScripts\CreateSinShapedLineStrip.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\ExampleScenes\ExampleScripts\ShotBehavior.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\Scripts\SetFovGlobalShaderVariable.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\Scripts\Utils\ExposePropertyAttribute.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\Scripts\Utils\TransformExtensionMethods.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\Scripts\VolumetricLineBehavior.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\Scripts\VolumetricLineStripBehavior.cs" />
+    <Compile Include="Assets\Items\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
     <Compile Include="Assets\OurScripts\AchievementDisplayer414.cs" />
     <Compile Include="Assets\OurScripts\AchievementManager.cs" />
     <Compile Include="Assets\OurScripts\Aggro414.cs" />
@@ -100,7 +110,9 @@
     <Compile Include="Assets\OurScripts\Fuel8.cs" />
     <Compile Include="Assets\OurScripts\Fuel9.cs" />
     <Compile Include="Assets\OurScripts\PlayerHealth414.cs" />
+    <Compile Include="Assets\OurScripts\Wander.cs" />
     <Compile Include="Assets\OurScripts\Wander2.cs" />
+    <Compile Include="Assets\RandomWalk.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -109,10 +121,22 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\SceneObjs\AllosaurusAndSkeleton\Scripts\AllosaurusCameraScript.cs" />
+    <Compile Include="Assets\SceneObjs\AllosaurusAndSkeleton\Scripts\AllosaurusSelectScript.cs" />
+    <Compile Include="Assets\SceneObjs\AllosaurusAndSkeleton\Scripts\SimpleAllosaurusCharacter.cs" />
+    <Compile Include="Assets\SceneObjs\AllosaurusAndSkeleton\Scripts\SimpleAllosaurusUserController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GradientGUIBars\ReadMe\AboutFonts.txt" />
+    <None Include="Assets\Items\VolumetricLines\Shaders\VolumetricLineShaderAdditive.shader" />
+    <None Include="Assets\Items\VolumetricLines\Shaders\VolumetricLineShaderAdditiveFast.shader" />
+    <None Include="Assets\Items\VolumetricLines\Shaders\VolumetricLineShaderAlphaBlended.shader" />
+    <None Include="Assets\Items\VolumetricLines\Shaders\VolumetricLineShaderAlphaBlendedFast.shader" />
+    <None Include="Assets\Items\VolumetricLines\Shaders\VolumetricLineStripShaderAdditive.shader" />
+    <None Include="Assets\Items\VolumetricLines\Shaders\VolumetricLineStripShaderAlphaBlended.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\SceneObjs\AllosaurusAndSkeleton\readme.txt" />
+    <None Include="Assets\SceneObjs\Bench\ReadMe.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />

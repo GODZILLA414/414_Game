@@ -17,7 +17,7 @@ public class Fuel7 : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		//print ("collided");
-		if (col.gameObject.name == "GameBike") {
+		if (col.gameObject.name == "ThirdPersonController") {
 			endObject.GetComponent<EndGame> ().setFuel7(true);
             Assets.VRBike.AchievementManager.collectedFuelCell();
             Destroy (transform.gameObject);

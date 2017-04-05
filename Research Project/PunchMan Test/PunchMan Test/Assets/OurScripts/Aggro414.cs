@@ -11,9 +11,8 @@ public class Aggro414 : MonoBehaviour {
     public int damage;
     public static float health = 100;
 
-    public float playerDistance;
 	private PlayerHealth414 playerHealth;
-    
+
 	// Use this for initialization
 	void Start () {
 		GameObject thePlayer = GameObject.Find ("ThirdPersonController");	
@@ -41,7 +40,7 @@ public class Aggro414 : MonoBehaviour {
 			}
 			transform.position += (player.position - transform.position).normalized*moveSpeed*Time.deltaTime;
 			transform.LookAt (player);
-            playerDistance = Vector3.Distance(transform.position, player.position);
+
 		}
 	}
 

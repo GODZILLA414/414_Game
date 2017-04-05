@@ -278,7 +278,7 @@ public class EndGame : MonoBehaviour
         //print ("collided");
         if (col.gameObject.name == "ThirdPersonController")
         {
-            if (fuel1 == true && fuel2 == true && fuel3 == true )
+            if (fuel1 == true && fuel2 == true && fuel3 == true && fuel4 == true && fuel5 == true && fuel6 == true )
             {
                 print("Done!");
                 SceneManager.LoadScene("CharacterThirdPerson");
